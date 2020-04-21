@@ -1,0 +1,57 @@
+body {
+    background-color: green;
+}
+
+.navbar-brand {
+    background-color: darkslategrey;
+    padding: 10px;
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.panel {
+    margin: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+h1 {
+    padding-top: 0px;
+    padding: 20px;
+}
+
+h2 {
+    padding-top: 0px;
+    padding: 20px;
+}
+
+p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.img {
+    float: left;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+  .img {
+      width: 100%;
+  }
+  .img-fluid {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+  }
+}
+
+.img-thumbnail {
+    max-width: 45%;
+    height: auto;
+}
