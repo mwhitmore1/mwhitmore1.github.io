@@ -45,7 +45,7 @@ p {
     height: auto;
 }
 
-.table-box {
+.table-responsive {
     overflow: scroll;
     max-height: 1000px;
     padding: 15px;
