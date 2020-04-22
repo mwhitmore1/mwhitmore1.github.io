@@ -25,17 +25,17 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Plots 
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
             <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
             <a class="dropdown-item" href="humidity.html">Humidity</a>
-            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+            <a class="dropdown-item active" href="wind_speed.html">Wind Speed</a>
           </div>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="comparisons.html">Comparison<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
@@ -44,25 +44,37 @@
       </ul>
     </div>
   </nav>
-  <div class="jumbotron">
-    <h1>Wind Speed</h1>
-    <img src="images/temperature.png" align="left" alt="Coming soon: temerature plot."/>
-    <p>
-      The purpose of this project was to analyze how weather changes as you get closer to the equator. 
-      To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. 
-    </p>
-    <p>
-      After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. 
-      Factors we looked at included: temperature, cloudiness, wind speed, and humidity. 
-      This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed. 
-    </p>
-  </div>
-  <div class="jumbotron">
-    <h2>Visualizations</h2>
-    <img src="images/cloudiness.png" alt="Coming soon: cloudiness plot."/>
-    <img src="images/humidity.png" alt="Coming soon: humidity plot."/>
-    <img src="images/temperature.png" alt="Coming soon: temerature plot."/>
-    <img src="images/wind_speed.png" alt="Coming soon: Wind speed plot"/>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel col-md-12">
+          <h1>Wind Speed</h1>
+          <div class="main-image">
+            <img class="mx-auto d-block" src="images/wind_speed.png" alt="Coming soon: temerature plot."/>
+          </div>
+          <p>
+            In both hemispheres, there does not appear to be a strong correlation between the latitude and wind speed. This may be because wind speed is more related to elevation and distance to the coast than to latitude. 
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <div class="panel col-md-12">
+          <h2>Visualizations</h2>
+          <a href="cloudiness.html">
+            <img class="img-thumbnail" src="images/cloudiness.png" alt="Coming soon: cloudiness plot."/>
+          </a>
+          <a href="humidity.html">
+            <img class="img-thumbnail" src="images/humidity.png" alt="Coming soon: humidity plot."/>
+          </a>
+          <a href="max_temperature.html">
+            <img class="img-thumbnail" src="images/temperature.png" alt="Coming soon: temerature plot."/>
+          </a>
+          <a href="wind_speed.html">
+            <img class="img-thumbnail" src="images/wind_speed.png" alt="Coming soon: Wind speed plot"/>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 
 </body>
